@@ -1,3 +1,11 @@
+:root {
+  --lavender-web: #d8d8f6ff;
+  --african-violet: #b18fcfff;
+  --heliotrope-gray: #978897ff;
+  --dark-liver: #494850ff;
+  --raisin-black: #2c2c34ff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +13,18 @@
 }
 
 body {
+  color: #fff;
   font-family: "Gluten", cursive;
+  min-height: 100vh;
+  background-color: var(--raisin-black);
 }
 
 .header {
-  margin: 30px;
+  margin: 0px 50px;
+  padding: 20px;
   text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 20px;
 }
