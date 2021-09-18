@@ -28,3 +28,38 @@ body {
 .header h1 {
   margin-bottom: 20px;
 }
+
+.snippets-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.snippet-card {
+  width: 16rem;
+  border: 1px dashed var(--lavender-web);
+  margin: 16px;
+}
+
+/* Tablet properties */
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .snippets-container {
+    justify-content: center;
+  }
+
+  .snippet-card {
+    width: 18rem;
+  }
+}
+
+/* Mobile properties */
+@media screen and (max-width: 576px) {
+  .snippets-container {
+    justify-content: center;
+  }
+
+  .snippet-card {
+    width: 100%;
+  }
+}
